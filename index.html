@@ -4,43 +4,234 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hamburguesería Rovers</title>
+    <!--Links de Bootstrap, CSS y Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
     <header>
-      <div class="navbar">
+
+      <!-- Navbars -->
+
+      <div class="navbar1">
+        
         <nav>
+
           <div class="menuSup">
             <ul>
-              <li><a href="#"><img class="logoEmail" src="/Users/milo/Downloads/emaillogo-removebg-preview.png" alt="logoEmail">Roversburger@burger.com</a></li>
-              <li><a href="#"><img class="phoneLogo" src="/Users/milo/Downloads/phoneLogo-removebg-preview.png" alt="phoneLogo">+223 994-563-869</a></li>
-              <li><a href="#"><img class="logoCarrito" src="/Users/milo/Downloads/logoCompras-removebg-preview.png" alt="logoCarrito">Carrito</a></li>
-              <li><a href="#"><img class="logoUsuario" src="/Users/milo/Downloads/logoUsuario-removebg-preview.png" alt="logoUsuario">Usuario</a></li>
+              <li><a href="#"><img class="logoEmail" src="img/emaillogo-removebg-preview.png" alt="logoEmail"><span class="menu-text">Roversburger@burger.com</span></a></li>
+              <li><a href="#"><img class="phoneLogo" src="img/phoneLogo-removebg-preview.png" alt="phoneLogo"><span class="menu-text">+223 994-563-869</span></a></li>
+              <li><a href="#"><img class="logoCarrito" src="img/logoCompras-removebg-preview.png" alt="logoCarrito"><span class="menu-text">Carrito</span></a></li>
+              <li><a href="#"><img class="logoUsuario" src="img/logoUsuario-removebg-preview.png" alt="logoUsuario"><span class="menu-text">Usuario</span></a></li>
             </ul>
           </div>
 
-          <div class="menuInf">
-           <div class="menuL">
-             <a href="#"><img class="logo" src="/Users/milo/Downloads/ultLogo-removebg-preview.png" alt="Logo"></a>
-           </div>
-
-            <div class="menuR">
-            <ul>
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Menú</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Equipo</a></li>
-            </ul>
-           </div>
-          </div>
         </nav>
+
+       <!-- Navbar con Bootstrap -->
+
+        <nav class="navbar navbar-expand-md bg-dark border-bottom border-body" data-bs-theme="dark">
+
+         <div class="container-fluid menuInf">
+
+
+
+            <div class="containerMenu">
+              <div class="menuL">
+
+                <a class="navbar-brand" href="#">
+                  <img class="logo" src="img/ultLogo-removebg-preview.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                </a>
+  
+              </div>
+
+              <div class="menuR">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                 <ul class="navbar-nav">
+                   <li class="nav-item align-text-center">
+                     <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Menú</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Blog</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" >Equipo</a>
+                   </li>
+                 </ul>
+
+                </div>
+
+              </div>
+
+            </div>
+
+        </nav>
+        
+
       </div>
+
     </header>
+
+    <main>
+       <!-- Sección principal con imagen de fondo y texto sobre la imagen -->
+
+      <section class="principal">
+
+          <div class="titulo1">
+            <h2>Bienvenido a nuestro delicioso paraiso</h2>
+          </div>
+
+          <div class="intro">
+            <p>Hamburguesas artesanales, elaboradas con pasión y los mejores ingredientes.
+            Cada bocado es una experiencia única que celebra la tradición y el cuidado en cada detalle.</p>
+          </div>
+           
+          <!-- Botón de la carta -->
+
+          <div class="buttomMenu">
+           <button type="submit" class="bMenu">
+             <a href="#">Nuestra Carta →</a>
+           </button>
+          </div>
+
+          <!-- Redes sociales -->
+
+          <div class="social">
+
+           <div class="lFacebook">
+            <a href="#"><img src="img/facebook.png" alt="logoFacebook"></a>
+           </div>
+           <div class="lInstagram">
+             <a href="#"><img src="img/instagram.png" alt="logoInstagram"></a>
+           </div>
+           <div class="lX">
+             <a href="#"><img src="img/x.png" alt="logoX"></a>
+            </div>
+
+          </div>
+
+      </section>
+
+
+      <!-- Sección de servicios con 3 columnas con icono y texto -->
+
+      <section class="servicios">
+
+       <div class="titulo2"><h2 class="titulo2-1">Our</h2><h2 class="titulo2-2">Services</h2></div>
+
+        <div class="container1">
+
+          <div class="container-grid1">
+
+          
+
+            <div class="divider">
+              <div class="logoArt"><img src="img/logoArt-removebg-preview.png" alt=""></div>
+              <h2>Artesanía en Cada Bocado</h2>
+              <p>"Nuestras hamburguesas se elaboran a diario con recetas artesanales y un toque de tradición. Cada ingrediente se escoge cuidadosamente para garantizar un sabor único, manteniendo siempre la esencia de lo hecho a mano."</p>
+              <button type="submit" class="bservicios">
+                <a href="#">Leer mas →</a>
+                </button>
+            
+            </div>
+
+          
+
+            <div class="divider">
+              <div class="logoFrescura"><img src="img/logoFescura-removebg-preview.png" alt=""></div>
+              <h2>Frescura y Modernidad</h2>
+              <p>"Trabajamos con productos frescos y de temporada para brindarte un menú moderno y lleno de matices. Cada plato combina lo mejor de la cocina actual con la dedicación de nuestros chefs, logrando un equilibrio perfecto entre sabor y presentación."</p>
+              <button type="submit" class="bservicios">
+                <a href="#">Leer mas →</a>
+                </button>
+            </div>
+
+        
+
+            <div class="divider">
+              <div class="logoServicio"><img src="img/logoServicio.png" alt=""></div>
+              <h2>Servicio de Confianza</h2>
+              <p>"Creemos que una experiencia gastronómica completa va más allá del plato. Por eso, nos esforzamos en ofrecer un servicio amable y cercano, cuidando cada detalle para que te sientas como en casa en todo momento."</p>
+              <button type="submit" class="bservicios">
+                <a href="#">Leer mas →</a>
+                </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- Sección sobre nosotros con imagen y texto -->
+
+      <section class="aboutUs">
+        
+        <div class="titulo3">
+          <h2 class="titulo3-1">Sobre</h2><h2 class="titulo3-2">nosotros</h2>
+        </div>
+
+        <div class="container2">
+
+          <div class="container-grid2">
+
+            <div class="fotoAbout">
+
+              <img src="img/FotoAboutUs.jpg" alt="fotoGenerica">
+
+            </div>
+
+            <div class="aboutUs">
+
+              <h2>Nuestro restaurante</h2>
+              <p>En Rovers, creemos que una hamburguesa no es solo comida, es una experiencia. Desde nuestros inicios, nos hemos dedicado a crear hamburguesas artesanales que combinan los mejores ingredientes frescos con 
+                una elaboración cuidada y una pasión por el buen sabor.</p>
+
+                <!-- Botón de leer más -->
+
+               <button type="submit" class="bAbout">
+                <a href="#">Leer mas →</a>
+                </button>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+   <!-- Footer con enlaces legales y de contacto -->
+
+    <footer>
+
+      <div class="footer">
+
+        <ul>
+          <li><a href="">Aviso legal</a></li>
+          <li><a href="">Copyrigth &copy; 2025</a></li>
+          <li><a href="">Cookies</a></li>
+        </ul>
+
+      </div>
+
+    </footer>
+
   </body>
 </html>

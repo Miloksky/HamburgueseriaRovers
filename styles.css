@@ -1,59 +1,53 @@
 body {
     padding : 0px;
     margin: 0px;
-    background-image: url("/Users/milo/Downloads/fondopagina.jpg");
+    /* Fondo oscurecido para toda la pagina*/
+    background-image: url("img/fondopagina.jpg");
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75 );
     background-blend-mode: darken;
 }
 
-.navbar{ 
+  /* Navbars */
+  
+.navbar1{ 
   width: 100%; 
   top: 0; 
   left: 0; 
   font-family:"lobster";
   font-size: 0.75rem;
-  background-color: black;
-  color: aliceblue;
+  color: #FFFFFF;
 }
 
-.navbar a{
+.navbar1 a{
   text-decoration: none;
   color: inherit;
 }
 
-.menuR a:hover {
-  color: #FFD700;
-  text-decoration: underline;
+.navbar{
+  padding: 0px;
 }
+
+  /*Iconos*/
+
 .logo{
-  width: 100px;
+  width: 90px;
   height: auto;
 }
-.menuInf{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 15px;
+.logoEmail, .phoneLogo, .logoUsuario, .logoCarrito{
+  width: 30px;
+  height: auto;
 }
-.menuR ul {
-  display: flex;
-  font-size: 1.5rem;
-  gap: 40px;
-  padding: 0px;
-  list-style: none;
-}
-
-
+/* Menu superior */ 
 
 .menuSup ul{
   margin: 0px;
-  padding: 0px 15px;
+  padding: 0px 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aliceblue;
+  background-color: #FFFFFF;
   color: black;
   list-style: none;
 }
@@ -62,20 +56,420 @@ display: flex;
 align-items: center;
 }
 
-.logoEmail{
-  width: 50px;
-  height: auto;
+/* Menu inferior */
+.containerMenu {
+  display: contents;
+  width: 100%;
 }
 
-.phoneLogo{
-  width: 50px;
+.menuInf{ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 5%;
+}
+.menuR ul {
+  display: flex;
+  font-size: 1.25rem;
+  gap: 40px;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+.menuR a:hover {
+  color:#e0840b;
+  text-decoration: underline;
+}
+
+
+/*sección Principal */
+
+.principal{
+  background-image: url("img/Hamburguesas-artesanas-bis2-1.jpg");
+  max-width: 100%;
+  height: 75vh;
+  margin: 2% 5% 0px 5%;
+  background-size: cover;
+  background-position: center;
+  display: flex;                
+  flex-direction: column;      
+  justify-content: space-evenly;      
+  align-items: flex-start;
+}
+.titulo1{
+  width: 50%;
+  color: #e0840b;
+  font-family: "oswald";
+  font-size: 2rem;
+  padding: 0 5%;
+  margin: 2% 0px ;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 3);
+  box-sizing: content-box;
+} 
+.titulo1 h2{
+  margin: 0%;
+}
+.intro{
+  padding: 0 5%;
+  width: 50%;
+  color: #FFFFFF;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+  font-family: "oswald";
+  font-size: 1.75rem;
+} 
+
+/*Boton menú */
+
+.buttomMenu, .bservicios{
+  padding: 0px 5%;
+}
+.bMenu {
+  font-family: "lobster";
+  background-color:  #e0840b;
+  color: #FFFFFF;
+  font-size: 1rem;
+  width: 150px;
+  height: 75px;
+  border-radius: 10px;
+}
+.bservicios{
+  font-family: "lobster";
+  background-color:  #e0840b;
+  color: #FFFFFF;
+  font-size: 1rem;
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.bMenu:hover, .bservicios:hover{
+  text-decoration:underline ;
+  background-color:  #ff9100;
+}
+.bMenu a, .bservicios a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/*Redes sociales */
+
+.social{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 0px 5%;
+  margin: 2% 0px;
+  color: aliceblue;
+}
+ .lInstagram img, .lFacebook img, .lX img {
+  max-width: 50px;
+  height: auto;
+  padding: 0 5% 5% 5%;
+}
+
+/*Títulos de Servicios */
+
+.titulo2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "oswald";
+  color: #FFFFFF;
+  margin: 5% 0px 0px 0px;
+  padding: 0px 5%;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.titulo2 h2{
+  margin: 1%;
+  font-size: 3rem;
+  text-align: center;
+}
+.titulo2-2{
+ color: #e0840b;
+ text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+}
+.titulo2-1{
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/*Grid de servicios */
+
+.container-grid1{
+  margin: 10% 5% 5% 5%;
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.container-grid1 .divider{
+  text-align: center;
+  border-left: 3px solid #FFFFFF;
+  padding: 0px 15%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.logoFrescura img, .logoArt img, .logoServicio img{
+  max-width: 160px;
   height: auto;
 }
-.logoUsuario{
-  width: 50px;
-  height: auto;
+.container-grid1 h2 {
+  color: #FFFFFF;
+  font-family: "oswald";
+  font-size: 1.75rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+
 }
-.logoCarrito{
-  width: 50px;
+.container-grid1 p {
+  color: #FFFFFF;
+  font-family: "oswald";
+  font-size: 1.25rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+}
+
+/*Títulos de About Us */
+
+.titulo3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "oswald";
+  color: #FFFFFF;
+  margin: 5% 0px 0px 0px;
+  padding: 0px 5%;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.titulo3 h2{
+  margin: 1%;
+  font-size: 3rem;
+  text-align: center;
+}
+.titulo3-1{
+ color: #e0840b;
+ text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.titulo3-2{
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/*Grid de About Us */
+
+.container-grid2{
+  margin: 10% 5% 5% 5%;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.container-grid2 div{
+  padding: 0px 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.fotoAbout img{
+  max-width: 100%;
   height: auto;
+  border-radius:10px ;
+}
+.container-grid2 h2 {
+  color:#ff9100;
+  font-family: "oswald";
+  margin: 2% 0px;
+  font-size: 3rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+}
+.container-grid2 p {
+  color: #FFFFFF;
+  font-family: "oswald";
+  font-size: 1.25rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
+}
+.bAbout{
+  font-family: "lobster";
+  background-color:  #e0840b;
+  color: #FFFFFF;
+  font-size: 1.15rem;
+  width: 150px;
+  height: 75px;
+  border-radius: 10px;
+}
+
+.bAbout:hover{
+  text-decoration:underline ;
+  background-color:  #ff9100;
+}
+.bAbout a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/*Footer */
+.footer{
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 1% 5%;
+}
+.footer ul{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  list-style: none;
+}
+.footer a{
+  font-family: "oswald";
+  font-size: 1rem;
+  color: inherit;
+}
+.footer a:hover{
+  text-decoration: none;
+}
+
+/* Estilos para pantallas menores a 768px */
+
+@media screen and (max-width: 768px){
+
+
+  .menuInf {
+    flex-direction: column;
+}
+
+  a.navbar-brand {
+    margin: 0%;
+}
+.navbar{
+  padding: 1%;
+}
+/* texto del menu superior desaparece */
+
+  .menu-text{
+    display: none;
+  }
+  .logoEmail, .phoneLogo, .logoUsuario, .logoCarrito{
+    width: 40px;
+    height: auto;
+  }
+
+  .menuInf img{
+    width: 100px;
+    height: auto;
+  }
+  .menuInf a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*Centrar contenido en la sección principal */
+
+  .principal  {
+    height: 100vh;
+    align-items: center;
+  }
+  
+  .titulo1{
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .intro{
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+    font-size: 1.25rem;
+  }
+  .intro p{
+    margin: 0% 5% ;
+  }
+  
+  .titulo2{
+    font-size: 2rem;
+    margin: 20% 0px 15% 0px;
+  }
+
+  /* Ajustes para grid de servicios */
+
+  .container-grid1{
+    grid-template-columns: 1fr;
+  }
+  .container-grid1 .divider{
+    border-bottom: 3px solid #FFFFFF;
+    border-left: none;
+    padding: 5% 0px;
+  }
+  .container-grid1 h2 {
+    font-size: 2rem;
+  }
+  .container-grid1 p {
+    font-size: 1.5rem;
+  }
+  .titulo3{
+    font-size: 2rem;
+    margin: 20% 0px 5% 0px;
+  }
+  .container-grid2{
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .container-grid2 div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 0px;
+  }
+  .container-grid2 h2 {
+    font-size: 2.5rem;  
+  }
+  .container-grid2 p {
+    font-size: 1.5rem;
+    text-align: center;
+  
+  }
+  .bAbout, .container-grid2 p, .container-grid2 h2 {
+    margin: 5% 0px;
+    text-align: center;
+  }
+    /* Footer fijo en dispositivos pequeños */
+  .footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+  }
+  .footer a{
+    font-size: 1rem;
+    
+  }
+}
+
+/* Estilos para pantallas menores a 1010px */
+
+@media (min-width: 768px) and (max-width:1010px){
+  .titulo1{
+    width: 100%;
+    padding: 0px;
+    text-align: start;
+  } 
+  .titulo1 h2{
+    margin: 0% 5% ;
+  }
+  .intro{
+    width: 100%;
+    padding: 0px;
+    text-align: start;
+  }
+  .intro p{
+    margin: 0% 5% ;
+  }
+  .container-grid2 h2 {
+    font-size: 2rem;
+  }
+  .container-grid2 p {
+    font-size: 1rem;
+  }
 }
